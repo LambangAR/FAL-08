@@ -30,11 +30,11 @@ color: white ;
 text-decoration: none;
 background: #111;
 }
-
-/* 
 .menu{
 	background-color: #333;
 }
+/* 
+
 
 .menu ul li{
 display: inline;
@@ -94,10 +94,7 @@ div.sticky {
   }
 
  footer{
- 	text-align: center;
- 	background: #333;
- 	color: white;
- 	height: 200px;
+ 	
  }
 
 
@@ -106,4 +103,25 @@ div.sticky {
  	border-color: red;
  	align-items: center;
  	height: 500px;
+ }
+
+ article{
+ 	text-align: justify;
+ }
+
+.footer{
+	text-align: center;
+ 	background: #333;
+ 	color: white;
+ 	height: 200px;
+}
+ .con-icon-social{
+ 	
+ 	background: green;
+ 	width: 20px;
+ 	height: 20px;
+ 	float: right;
+ }
+ .icon-social{
+
  }
