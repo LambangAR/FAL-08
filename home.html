@@ -3,27 +3,23 @@
 <head>
 	<title> Judul Fipro </title>
 
-	<meta charset="utf-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fa/web-fa/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="fa/web-fa/css/fontawesome-all.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
 </head>
 <body>
 
 <div class="container-fluid">
+  
    <header class="row">
+   
+   
+    
     <ul class="col-md-12">
      
       <div class="dropdown">
@@ -32,7 +28,7 @@
     
      
       <div class="dropdown">
-        <li class="dropbtn"><a href="#">Menu</a>
+        <li ><a href="#">Menu</a>
           <div class="dropdown-content">
               <b href="#">Games</b>
               <b href="#">Tags</b>
@@ -42,7 +38,7 @@
 
      
      <div class="dropdown">
-        <li class="dropbtn"><a href="#Menu">Article</a>
+        <li ><a href="#Menu">Article</a>
           <div class="dropdown-content">
               <b href="#">PC</b>
               <b href="#">PS4</b>
@@ -54,7 +50,7 @@
 
     
       <div class="dropdown">
-        <li class="dropbtn"><a href="#Menu">Videos</a>
+        <li ><a href="#Menu">Videos</a>
           <div class="dropdown-content">
               <b href="#">Gameplay</b>
               <b href="#">Walktrough</b>
@@ -64,72 +60,95 @@
         </li> 
       </div>
 
+<div class="con-icon-social">
+        <li class="col-md-1 icon-social">
+          <i class="fab fa-twitter"></i>
+        </li>
+        <li class="col-md-1 icon-social">
+          <i class="fab fa-facebook"></i>
+        </li>
+</div>   
+
+  
+
+       
     </ul>
    </header>
+
 </div>
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 slides">
+    <div class="col-md-12 con-slides">
+
+<div class="slider" id="main-slider"><!-- outermost container element -->
+  <div class="slider-wrapper"><!-- innermost wrapper element -->
+    <img src="bg1.jpg" alt="First" class="slide" /><!-- slides -->
+    <img src="bg2.jpg" alt="Second" class="slide" />
+    <img src="bg1.png" alt="Third" class="slide" />
+  </div>
+</div>  
+
     </div>
   </div>
 </div>
 
 <br>
 <div class="container">
-  <div class="row">
-     <div class="col-md-3">
-        <article> 
+  <div class="row container-content">
+
+    <div class="col-md-3">
+        <content> 
           <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<p></article>
-    </div>
-     <div class="col-md-3">
-        <article> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<p></article>
-    </div>
-     <div class="col-md-3">
-        <article> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<p></article>
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content><p></content>
     </div>
     <div class="col-md-3">
-        <article> 
+        <content> 
           <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<p></article>
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
     </div>
     <div class="col-md-3">
-        <article> 
+        <content> 
           <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<p></article>
-    </div>
-     <div class="col-md-3">
-        <article> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<p></article>
-    </div>
-     <div class="col-md-3">
-        <article> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<p></article>
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
     </div>
     <div class="col-md-3">
-        <article> 
+        <content> 
           <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<p></article>
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
     </div>
+    <div class="col-md-3">
+        <content> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
+    </div>
+    <div class="col-md-3">
+        <content> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
+    </div>
+    <div class="col-md-3">
+        <content> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
+    </div>
+    <div class="col-md-3">
+        <content> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
+    </div>
+     
   </div>
+
+ 
+    
 </div>
 
 <br>
+
+
+
+
 
 <div class="container-fluid">
   <footer class="row"> 
@@ -149,5 +168,6 @@
   </footer>
 </div>
 
+<script type="text/javascript" src="slide.js"></script>
 </body>
 </html> 

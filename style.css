@@ -1,20 +1,13 @@
-<body>
+body{
 
-</body>
+}
 
+header{
 
-header.sticky{ 
-	
-	 }
+}
 header ul { 
-	background: #333;
-	
+	background-color: #333;
 }
-
-.head{
-	background-color: #111;
-}
-
 header ul li{
 display: inline;
 border-radius: 0px;
@@ -30,30 +23,6 @@ color: white ;
 text-decoration: none;
 background: #111;
 }
-.menu{
-	background-color: #333;
-}
-/* 
-
-
-.menu ul li{
-display: inline;
-border-radius: 0px;
-
-}
-.menu ul li a{
-margin:  0px;
-color: white ;
-text-decoration: none;
-padding: 5px;
-}
-
-.menu ul li a:hover{
-text-decoration: none;
-background: #111;
-border-radius: 0px;
-}
-*/
 
 .dropdown {
 	float: left;
@@ -69,12 +38,11 @@ border-radius: 0px;
 }
 .dropdown-content b{
     color: black;
-    padding: 2px;
+    padding: 5px;
     text-decoration: none;
     display: block;
     z-index: 5;
     cursor: pointer;
-
 }
 .dropdown-content b:hover {
 	background: #ccc;
@@ -87,41 +55,75 @@ border-radius: 0px;
 	background-color: #111;
 }
 
-
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  }
-
  footer{
- 	
+ 	text-align: center;
+ 	background: #333;
+ 	color: white;
+ 	height: 200px;
  }
 
+.footer{
+	
+}
 
- .slides{
- 	background: green;
- 	border-color: red;
- 	align-items: center;
- 	height: 500px;
- }
+ 
 
  article{
  	text-align: justify;
  }
 
-.footer{
-	text-align: center;
- 	background: #333;
- 	color: white;
- 	height: 200px;
-}
  .con-icon-social{
- 	
- 	background: green;
- 	width: 20px;
- 	height: 20px;
+ 	position: relative;
  	float: right;
+ 	padding: 15px;
+ 	color: white;
  }
+
  .icon-social{
 
  }
+
+.container-content{
+	background: hsla(0, 0%, 7%, 0.5);
+	padding: 10px;
+}
+content{
+
+}
+
+/* slideshow */
+}
+.con-slides{
+ 	background: green;
+ 	border-color: red;
+ 	align-items: center;
+ 	height: 500px;
+ }
+html,body {
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    
+    margin: auto;
+    
+}
+
+.slider-wrapper {
+    
+    height: 500px;
+    position: relative;
+}
+
+.slide {
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 3s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+    opacity: 1;
+}
