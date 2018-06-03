@@ -69,13 +69,15 @@ background: #111;
 
  .con-icon-social{
  	position: relative;
+    display: flex;
  	float: right;
- 	padding: 15px;
  	color: white;
+    padding right: 5px;
  }
+ 
 
- .icon-social{
-
+ .icon-social a:hover {
+    background-color: transparent;
  }
 
 .container-content{
@@ -145,4 +147,10 @@ html,body {
 	padding: 5px;
 	font-size: small;
 	text-align: center;
+}
+.btn-next{
+    background: #111;
+    float: right;
+    color:white;
+    padding: 5px;
 }
