@@ -11,10 +11,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
+    <script>
+      var app = angular.module("myApp", ["ngRoute"]);
+      app.config(function($routeProvider){
+        $routeProvider
+        .when("/", {
+            templateUrl : "main.htm"
+        })
+        .when("/videos", {
+          templateUrl : "videos.htm"
+        })
+        .when("/product", {
+          templateUrl : "product.htm"
+        })
+        .when("/contact", {
+          templateUrl : "contact.htm"
+        });
+
+      });
+    </script>
+
 </head>
 <body>
 
-<div class="container-fluid">
+<div ng-app="myapp" class="container-fluid">
   
    <header class="row">
    
@@ -50,7 +70,7 @@
 
     
       <div class="dropdown">
-        <li ><a href="#Menu">Videos</a>
+        <li ><a href="#!videos">Videos</a>
           <div class="dropdown-content">
               <b href="#">Gameplay</b>
               <b href="#">Walktrough</b>
@@ -96,59 +116,81 @@
 <br>
 <div class="container">
   <div class="row container-content">
+  <br>
 
-    <div class="col-md-3">
-        <content> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content><p></content>
-    </div>
-    <div class="col-md-3">
-        <content> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
-    </div>
-    <div class="col-md-3">
-        <content> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
-    </div>
-    <div class="col-md-3">
-        <content> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
-    </div>
-    <div class="col-md-3">
-        <content> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
-    </div>
-    <div class="col-md-3">
-        <content> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
-    </div>
-    <div class="col-md-3">
-        <content> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
-    </div>
-    <div class="col-md-3">
-        <content> 
-          <img src="bg2.jpg" style="height:120px;">
-          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p></content>
-    </div>
-     
+<!-- label -->
+  <div class="col-md-12 con-label">
+  <div class="col-md-1 label">
+  <h5>artikel</h5>
+  </div>
   </div>
 
- 
-    
+<!-- content -->
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+
+<!-- label -->
+     <div class="col-md-12 con-label">
+  <div class="col-md-1 label">
+  <h5>videos</h5>
+  </div>
+  </div>
+
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="bg1.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="bg2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+
+  </div>
 </div>
 
 <br>
 
 
 
-
+<ng-view></ng-view>
 
 <div class="container-fluid">
   <footer class="row"> 
@@ -169,5 +211,6 @@
 </div>
 
 <script type="text/javascript" src="slide.js"></script>
+
 </body>
 </html> 
