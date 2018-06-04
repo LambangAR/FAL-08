@@ -1,6 +1,13 @@
+
 body{
-background: hsla(0, 0%, 7%, 0.5);
+    background: hsla(0, 0%, 7%, 0.5);
 }
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      
+      }
 
 header{
 
@@ -57,13 +64,13 @@ background: #111;
 
  footer{
  	text-align: center;
- 	background: #333;
+ 	
  	color: white;
  	height: 200px;
  }
 
 .footer{
-	
+	background: #333;
 }
 
 
@@ -154,3 +161,19 @@ html,body {
     color:white;
     padding: 5px;
 }
+.contactus{
+   
+    background: hsla(0, 0%, 99%, 0.5);
+    display: ;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+#map {
+        height: 50%;
+        width: 50%;
+        margin: 0 auto;
+        padding: 15px;
+        display: ;
+        z-index: 5;
+      }

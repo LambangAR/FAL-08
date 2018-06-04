@@ -24,9 +24,7 @@
         .when("/videos", {
           templateUrl : "videos.htm"
         })
-        .when("/about", {
-          templateUrl : "about.htm"
-        })
+        
 
       });
     </script>
@@ -40,7 +38,7 @@
     <ul class="col-md-12">
      
       <div class="dropdown">
-        <li> <a href="#!">Home</a></li>
+        <li> <a href="home.html">Home</a></li>
       </div>
     
      
@@ -78,7 +76,7 @@
       </div>
 
       <div class="dropdown">
-        <li ><a href="aboutus.html">About</a>
+        <li ><a href="about.html">About</a>
           <div class="dropdown-content">
               
           </div>                  
@@ -95,39 +93,41 @@
     </ul>
    </header>
 
-   <div class="container">
-  <div class="row">
-    <div class="col-md-12 con-slides">
-
-<div class="slider" id="main-slider"><!-- outermost container element -->
-  <div class="slider-wrapper"><!-- innermost wrapper element -->
-    <img src="bg1.jpg" alt="First" class="slide" /><!-- slides -->
-    <img src="bg2.jpg" alt="Second" class="slide" />
-    <img src="bg1.png" alt="Third" class="slide" />
-  </div>
-</div>  
-
-    </div>
-  </div>
-</div>
+   
 
 <br>
+
+  
+</div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-12 con-slides">
-    </div>
-  </div>
+
+
+<div class="col-md-12 contactus">
+  <h1>Connect With One of Our Global Offices</h1>
+  <h5>Address
+25 First Street, 2nd Floor <br>
+Cambridge, MA 02141<br>
+United States<br>
+Phone<br>
++1 888 HUBSPOT <br>
+(+1 888 482 7768)<br>
+Fax<br>
++1 617 812 5820</h5>
+</div>
 </div>
 
-<br>
-
-    <ng-view></ng-view>
-</div>
 
 
-<br>
- 
+ <div id="map"><script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+  </script></div>
 
 <br>
     <div class="container-fluid">
