@@ -11,6 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
+ <title>FAL! Game Portal</title>
+    <link rel="shortcut icon" href="img\ic.ico">
     <script>
       var app = angular.module("myApp", ["ngRoute"]);
       app.config(function($routeProvider){
@@ -55,9 +57,8 @@
      <div class="dropdown">
         <li ><a href="#!articles">Articles</a>
           <div class="dropdown-content">
-              <b href="#!PC">PC</b>
-              <b href="#!PS4">PS4</b>
-              <b href="#!Nitendo">Nitendo</b>
+              <b href="article_PC.html">PC</b>
+              <b href="article_PS.html">PS4</b>
               
           </div>                  
         </li> 
@@ -123,8 +124,8 @@ Fax<br>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+          center: {lat: -7.497, lng: 110.444},
+          zoom: 15
         });
       }
   </script></div>
