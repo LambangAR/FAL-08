@@ -43,15 +43,19 @@ background: #111;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
 }
-.dropdown-content b{
+.dropdown-content a{
     color: black;
     padding: 5px;
     text-decoration: none;
     display: block;
     z-index: 5;
     cursor: pointer;
+    background: white;
 }
-.dropdown-content b:hover {
+
+
+
+.dropdown-content a:hover {
 	background: #ccc;
 }
 .dropdown:hover .dropdown-content {
@@ -59,7 +63,7 @@ background: #111;
 }
 
 .dropdown:hover li a{
-	background-color: #111;
+	background-color: ;
 }
 
  footer{
@@ -106,6 +110,9 @@ padding: 10px;
 	height: 120px;
 	width: 100%;
 }
+.subcon iframe{
+    width: 100%;
+}
 
 /* slideshow */
 }
@@ -148,11 +155,11 @@ html,body {
 .con-label{
  padding: 15px 10px 0px 0px;
 }
-.label h3{
+.label h5{
 	background: #111;
 	color: white;
 	padding: 5px;
-	
+	font-size: small;
 	text-align: center;
 }
 .btn-next{

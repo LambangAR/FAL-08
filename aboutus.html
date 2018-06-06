@@ -11,8 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
- <title>FAL! Game Portal</title>
-    <link rel="shortcut icon" href="img\ic.ico">
     <script>
       var app = angular.module("myApp", ["ngRoute"]);
       app.config(function($routeProvider){
@@ -44,17 +42,26 @@
       </div>
     
      
-           <div class="dropdown">
-        <li ><a href="">Games</a>
+      <div class="dropdown">
+        <li ><a href="">Menu</a>
+          <div class="dropdown-content">
+              <b href="#!games">Games</b>
+              <b href="#!tags">Tags</b>
+          </div>
         </li>
      </div>
 
      
-
      <div class="dropdown">
-        <li ><a href="articles.htm">Articles</a>               
+        <li ><a href="#!articles">Articles</a>
+          <div class="dropdown-content">
+              <b href="#!PC">PC</b>
+              <b href="#!PS4">PS4</b>
+              <b href="#!Nitendo">Nitendo</b>
+              
+          </div>                  
         </li> 
-     </div>           
+     </div>
 
     
       <div class="dropdown">
@@ -69,7 +76,7 @@
       </div>
 
       <div class="dropdown">
-        <li ><a href="aboutus.html">About</a>
+        <li ><a href="about.html">About</a>
           <div class="dropdown-content">
               
           </div>                  
@@ -116,8 +123,8 @@ Fax<br>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -7.748, lng: 110.373},
-          zoom: 15
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
         });
       }
   </script></div>

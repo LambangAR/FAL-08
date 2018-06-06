@@ -1,184 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fa/web-fa/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-
- <title>FAL! Game Portal</title>
-    <link rel="shortcut icon" href="img\ic.ico">
-    <script>
-      var app = angular.module("myApp", ["ngRoute"]);
-      app.config(function($routeProvider){
-        $routeProvider
-        .when("/", {
-            templateUrl : "main.htm"
-        })
-        .when("/articles", {
-          templateUrl : "articles.htm"
-        })
-        .when("/videos", {
-          templateUrl : "videos.htm"
-        })
-        
-
-      });
-    </script>
-
-  </head>
-
-  <body>
-
-    <div ng-app="myApp" class="container-fluid">
-      <header class="row">
-    <ul class="col-md-12">
-     
-      <div class="dropdown">
-        <li> <a href="home.html">Home</a></li>
-      </div>
-    
-     
-      <div class="dropdown">
-        <li ><a href="">Games</a>
-        </li>
-     </div>
-     
-     <div class="dropdown">
-        <li ><a href="articles.htm">Articles</a>               
-        </li> 
-     </div>
-
-    
-      <div class="dropdown">
-        <li ><a href="#!videos">Videos</a>
-          <div class="dropdown-content">
-              <b href="#!gameplay">Gameplay</b>
-              <b href="#!walktrough">Walktrough</b>
-              <b href="#!trailer">Trailer</b>
-              <b href="#!xbox">Xbox</b>
-          </div>                  
-        </li> 
-      </div>
-
-      <div class="dropdown">
-        <li ><a href="aboutus.html">About</a>
-          <div class="dropdown-content">
-              
-          </div>                  
-        </li> 
-      </div>
-
-<div class="con-icon-social">
-        <li class=" icon-social">
-         <a href="www.twitter.com/awangga_"> <i class="fab fa-twitter"></i></a>
-
-          <li class=" icon-social">
-         <a href="www.facebook.com"> <i class="fab fa-facebook"> </i></a>
-</div>      
-    </ul>
-   </header>
-
-   
-
-<br>
-
-  
-</div>
 
 <div class="container">
   <div class="row container-content">
   <br>
 
-<div class="col-md-12 con-label">
-  <div class="col-md-2 label">
-  <h3>Articles</h3>
+<!-- label -->
+  <div class="col-md-12 con-label">
+  <div class="col-md-1 label">
+  <h5>PC</h5>
   </div>
   </div>
 
 <!-- content -->
     <div class="col-md-3 content">
         <div class=" subcon"> 
-          <img src="https://statik.tempo.co/data/2018/04/23/id_700454/700454_720.jpg" style="height:120px;">
-          <p>Detroit: Become Human, Game Terbaru PS4 yang Paling Ditunggu-tunggu...<a href="#">More</a><p>
+          <img src="img/img1.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
         </div>
     </div>
     <div class="col-md-3 content">
         <div class=" subcon"> 
-          <img src="http://jagatplay.com/wp-content/uploads/2018/04/god-of-war-jagatplay-276-600x338.jpg" style="height:120px;">
-          <p>God Of War Jadi Ekslusif PS4 Dengan Penjualan Tercepat...<a href="#">More</a><p>
+          <img src="img/img2.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
         </div>
     </div>
     <div class="col-md-3 content">
         <div class=" subcon"> 
-          <img src="https://www.thenerdmag.com/wp-content/uploads/2018/04/Octopath-Traveler.jpg" style="height:120px;">
-          <p>Square Enix Dedikasikan Divisi Baru Untuk Kerjakan Game Nintento Switch...<a href="#">More</a><p>
+          <img src="img/img3.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
         </div>
     </div>
     <div class="col-md-3 content">
         <div class=" subcon"> 
-          <img src="https://cdn1-a.production.images.static6.com/2Xb3UeTxmRmjYOtn9Sq9bAGuBTY=/640x360/smart/filters:quality(75):strip_icc():format(webp)/liputan6-media-production/medias/2225860/original/030114600_1527137433-battlefield-v-logo.jpg" style="height:120px;">
-          <p>Battlefield V Dipastikan Rilis Oktober 2018...<a href="#">More</a><p>
+          <img src="img/img4.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
         </div>
+         <div class="col-md-12 con-label">
+  <div class=" btn-next">
+  <a href="" style="color: white"> more </a>
+  </div>
+  </div>
     </div>
 
-    <!-- content -->
-    <div class="col-md-3 content">
-        <div class=" subcon"> 
-          <img src="https://static1.squarespace.com/static/59af2189c534a58c97bd63b3/t/5b17a092562fa70b3ad3d3a9/1528275104389/Dota+2+ranked+tiers.jpg?format=1000w" style="height:120px;">
-          <p>Valve mengumumkan musim baru Dota 2...<a href="#">More</a><p>
-        </div>
-    </div>
-    <div class="col-md-3 content">
-        <div class=" subcon"> 
-          <img src="https://coherent-labs.com/wp-content/uploads/2017/07/ximage4.png.pagespeed.ic.tlmCDeZGOU.webp" style="height:120px;">
-          <p>PLAYERUNKNOWN’S BATTLEGROUNDS: The Resurgence of PC Development in Korea...<a href="#">More</a><p>
-        </div>
-    </div>
-    <div class="col-md-3 content">
-        <div class=" subcon"> 
-          <img src="https://cdn.vox-cdn.com/thumbor/2rhq8olPrcmo48x_zE8N4r5EKbM=/0x0:1920x1080/1520x0/filters:focal(0x0:1920x1080):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/7696121/nier_automata.jpg" style="height:120px;">
-          <p>Nier: Automata’s robots remind us that being human isn’t as great as it’s cracked up to be...<a href="#">More</a><p>
-        </div>
-    </div>
-    <div class="col-md-3 content">
-        <div class=" subcon"> 
-          <img src="https://wallpapersite.com/images/pages/pic_w/1011.jpg" style="height:120px;">
-          <p>Resident Evil 7 finally gets Xbox One X enhancements in long-awaited new update...<a href="#">More</a><p>
-        </div>
-    </div>
-    </div>
-    </div>
-
-
-
-<br>
-    <div class="container-fluid">
-  <footer class="row"> 
-    <div class="col-md-12 footer">
    
-      
-        <br>
-        <a href="#">back to top</a>
-        <br>
-        <p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-        
-        <br>
-        <p>copyright 2018 </p>  
-    </div> 
-  </footer>
+
+<!-- label -->
+  <div class="col-md-12 con-label">
+  <div class="col-md-1 label">
+  <h5>videos</h5>
+  </div>
+  </div>
+
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="img/img5.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="img/img6.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="img/img7.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+    </div>
+    <div class="col-md-3 content">
+        <div class=" subcon"> 
+          <img src="img/img8.jpg" style="height:120px;">
+          <p>tempor incididunt ut labore et dolore magna aliqua. <a href="#">More</a><p>
+        </div>
+        <div class="col-md-12 con-label">
+  <div class=" btn-next">
+  <a href="" style="color: white"> more </a>
+  </div>
+  </div>
+    </div>
+
+  </div>
 </div>
 
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-uCTpxNUJmwTRiAIcOX471LiV1jahzyk&callback=initMap"
-    async defer></script>
-<script type="text/javascript" src="slide.js"></script>
+<br>
 
-</body>
-</html> 

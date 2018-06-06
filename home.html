@@ -13,6 +13,7 @@
 
  <title>FAL! Game Portal</title>
     <link rel="shortcut icon" href="img\ic.ico">
+    
     <script>
       var app = angular.module("myApp", ["ngRoute"]);
       app.config(function($routeProvider){
@@ -29,6 +30,24 @@
         .when("/about", {
           templateUrl : "about.htm"
         })
+        .when("/gameplay", {
+          templateUrl : "gameplay.htm"
+        })
+        .when("/PC", {
+          templateUrl : "PC.htm"
+        })
+         .when("/trailer", {
+          templateUrl : "trailer.htm"
+        })  
+         .when("/PS4", {
+          templateUrl : "PS4.htm"
+        })
+        .when("/Nitendo", {
+          templateUrl : "Nitendo.htm"
+        })
+        .when("/xbox", {
+          templateUrl : "xbox.htm"
+        })
 
       });
     </script>
@@ -42,28 +61,29 @@
     <ul class="col-md-12">
      
       <div class="dropdown">
-        <li> <a href="home.html">Home</a></li>
+        <li> <a href="#!">Home</a></li>
       </div>
-    
-     
-      <div class="dropdown">
-        <li ><a href="">Games</a>
-        </li>
-     </div>
 
      
      <div class="dropdown">
-        <li ><a href="articles.htm">Articles</a>               
+        <li ><a href="#!articles">Article</a>
+          <div class="dropdown-content">
+              <a href="#!PC">PC</a>
+              <a href="#!PS4">PS4</a>
+              <a href="#!Nitendo">Nitendo</a>
+              <a href="#!xbox">Xbox</a>
+          </div>                  
         </li> 
      </div>
+
     
       <div class="dropdown">
         <li ><a href="#!videos">Videos</a>
           <div class="dropdown-content">
-              <b href="#!gameplay">Gameplay</b>
-              <b href="#!walktrough">Walktrough</b>
-              <b href="#!trailer">Trailer</b>
-              <b href="#!xbox">Xbox</b>
+              <a href="#!gameplay">Gameplay</a>
+              <a href="#!walktrough">Walktrough</a>
+              <a href="#!trailer">Trailer</a>
+              
           </div>                  
         </li> 
       </div>
@@ -92,11 +112,12 @@
 
 <div class="slider" id="main-slider"><!-- outermost container element -->
   <div class="slider-wrapper"><!-- innermost wrapper element -->
-    <img src="https://wallpapersite.com/images/pages/pic_w/4151.jpg" alt="First" class="slide" /><!-- slides -->
-    <img src="http://wallpapericon.com/wp-content/uploads/2017/06/Game-HD-Nier-Automata-Wallpaper.jpg" alt="Second" class="slide" />
-    <img src="https://wallpapersite.com/images/pages/pic_w/1011.jpg" alt="Third" class="slide" />
-    <img src="http://www.wallpaperback.net/wp-content/uploads/2018/02/PUBG-Player-Unknown-Battlegrounds-Cover-UHD-4K-Wallpaper.jpg" alt="Forth" class="slide" />
-    <img src="http://kb4images.com/images/dota-2-wallpapers/36428476-dota-2-wallpapers.jpg" alt="Fifth" class="slide" />
+    <img src="img/ss6.jpg" alt="First" class="slide" /><!-- slides -->
+    <img src="img/ss1.jpg" alt="Second" class="slide" />
+    <img src="img/ss6.jpg" alt="Third" class="slide" />
+    <img src="img/ss3.jpg" alt="Third" class="slide" />
+    <img src="img/ss4.jpg" alt="Third" class="slide" />
+    <img src="img/ss5.jpg" alt="Third" class="slide" />
   </div>
 </div>  
 
