@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fa/web-fa/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+ <title>FAL! Game Portal</title>
+    <link rel="shortcut icon" href="img\ic.ico">
+    <script>
+      var app = angular.module("myApp", ["ngRoute"]);
+      app.config(function($routeProvider){
+        $routeProvider
+        .when("/", {
+            templateUrl : "main.htm"
+        })
+        .when("/articles", {
+          templateUrl : "articles.htm"
+        })
+        .when("/videos", {
+          templateUrl : "videos.htm"
+        })
+        
+
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <div ng-app="myApp" class="container-fluid">
+      <header class="row">
+    <ul class="col-md-12">
+     
+      <div class="dropdown">
+        <li> <a href="home.html">Home</a></li>
+      </div>
+    
+     
+      <div class="dropdown">
+        <li ><a href="">Games</a>
+        </li>
+     </div>
+     
+     <div class="dropdown">
+        <li ><a href="articles.htm">Articles</a>               
+        </li> 
+     </div>
+
+    
+      <div class="dropdown">
+        <li ><a href="#!videos">Videos</a>                
+        </li> 
+      </div>
+
+      <div class="dropdown">
+        <li ><a href="aboutus.html">About</a>
+          <div class="dropdown-content">
+              
+          </div>                  
+        </li> 
+      </div>
+
+<div class="con-icon-social">
+        <li class=" icon-social">
+         <a href="https://www.facebook.com/zuck"> <img src="img\ico\fb.ico" style="height:20px;"></a></li>
+
+          <li class=" icon-social">
+         <a href="https://www.instagram.com/zuck/"><img src="img\ico\inst.png" style="height:20px;"> <i class="fab fa-insta"> </i></a></li>
+</div>     
+    </ul>
+   </header>
+
+   
+
+<br>
+
+  
+</div>
+
+<div class="container">
+  <div class="row container-content">
+  <br>
+
+<div class="col-md-12 con-label">
+  <div class="col-md-1 label">
+  <h3 style="color: white">Articles</h3>
+  </div>
+  </div>
+    <div class="col-md-3 content">
+        <div class=" subcon2"> 
+<h5>PLAYERUNKNOWN’S BATTLEGROUNDS: The Resurgence of PC Development in Korea</h5><br>
+ <img src="img\art\a6.jpg" style="height:400px;">
+<p><br>
+  Saya baru saja melarikan diri dari yang lain dan saya setengah jalan di halaman ketika dinding mulai mendekat. Sebuah medan listrik bundar muncul di belakang saya, mengejar tumit saya saat saya berlari untuk hidup saya. Setelah lolos dari sekelompok pemain yang marah kembali ke markas, saya sekarang akan menghadapi kematian saya dari luka yang perlahan-lahan ditimbulkan oleh permainan itu sendiri. Dan semua penyebab itu 'Saya tidak dapat mencapai zona aman yang ditandai dengan lingkaran putih di minimap pada waktunya. Saya berlari dan berlari, tetapi medan listrik terus mengikuti saya sampai melemahkan sisa-sisa kekuatan terakhir saya ... Setidaknya itu adalah cara yang menarik untuk mengakhiri putaran permainan ini.
+<br>
+Ini adalah PLAYERUNKNOWN'S BATTLEGROUNDS (PUBG), game 'Battle Royale' baru dari Bluehole dan Brendan Greene, pencipta model Battle Royale populer untuk ARMA 2's DayZ MOD dan kemudian ARMA 3. Ide Brendan dilisensikan oleh Daybreak dan akhirnya menjadi H1Z1: King The Kill, yang telah terjual hampir enam juta kopi. PUBG telah mempertaruhkan klaimnya sebagai salah satu game terlaris dan paling banyak dimainkan di Steam. Namun, pada awalnya, tidak ada yang bahkan memimpikan kesuksesan tersebut, karena lingkungan untuk pengembangan game PC di Korea telah menjadi basi, dengan banyak perusahaan bekerja dengan anggaran kecil untuk mengembangkan game seluler dalam waktu singkat.
+<br>
+Fokus pada game seluler tidak menyurutkan tim di Bluehole untuk mengikuti rencana mereka untuk membuat game PC daring yang kompetitif. Tim ini menjangkau Coherent Labs berharap dapat membangun kemitraan jangka panjang. Bluehole dan Coherent Labs bergabung untuk menunjukkan bahwa pengembangan PC di Korea dapat berhasil dan bersama-sama mereka telah mendorong banyak pengembang game untuk membuat game PC di tahun-tahun mendatang.
+<br>
+Ketika kami bekerja sama dengan Bluehole, kami menemukan bahwa UI berbasis HTML5 yang diberdayakan oleh Coherent GT, adalah solusi antarmuka pengguna terbaik untuk pengembangan PUBG. PUBG menggunakan Unreal Engine 4 dan plugin UE4 kami memungkinkan pengembang untuk mulai bekerja dan melakukan iterasi segera. Tim Bluehole memiliki pengalaman bekerja dengan teknologi berbasis flash, sehingga mereka dapat dengan cepat beradaptasi dengan pendekatan yang lebih baru dan lebih fleksibel yang dimungkinkan oleh Coherent GT. Waktu respons dukungan cepat dan komunikasi langsung dengan pengembang kami memastikan bahwa mereka menggunakan pendekatan paling optimal untuk UI mereka.
+<br>
+Premis utama PUBG adalah yang sederhana untuk diikuti. Permainan dimulai dengan 100 pemain dijatuhkan dari pesawat terbang ke sebuah pulau dengan tujuan tunggal menjadi orang terakhir yang berdiri. Gameplaynya sangat kompetitif karena pemain tidak memulai dengan peralatan apa pun, jadi mereka perlu mencari persediaan di gedung atau dari pemain yang telah mereka bunuh. Mereka harus melakukan perjalanan ke zona aman yang ditunjukkan oleh lingkaran putih yang semakin semakin kecil dan lebih sulit untuk dijangkau saat permainan berlangsung. Jika Anda telah melihat Hunger Games, Anda mendapatkan intinya. Aturan-aturan sederhana ini menjelaskan mengapa game ini begitu sukses di Twitch.
+<br>
+Durasi permainan yang singkat membuatnya tetap menarik dan merupakan cara yang baik untuk menghilangkan stres. Dengan fitur-fiturnya yang realistis, gim ini membantu pengguna menjadi nyaman dalam waktu singkat, menyediakan navigasi dan orientasi cepat yang sangat penting untuk kesuksesan dalam gim. Dengan menggunakan transisi dan animasi, UI menghadirkan pengalaman pemain yang halus.
+
+</p>
+</div>
+</div>
+
+    
+    </div>
+    </div>
+    </div>
+
+
+
+<br>
+    <div class="container-fluid">
+  <footer class="row"> 
+    <div class="col-md-12 footer">
+   
+      
+        <br>
+        <a href="#">back to top</a>
+        <br>
+ <h4 align="left">FAL! Game Portal</h4>
+  <p align="left">fal.game@gmail.com</p> 
+        <p align="left">
+Disclaimer: Isi web ini diambil dari berbagai sumber.<br> Jika ada Gambar atau artikel yang menyinggung atau <br>di bawah Hak Cipta Anda maka silakan E-mail kami <br>untuk dihapus dalam waktu 24 jam</p>
+<p>copyright 2018</p>
+        
+    </div> 
+  </footer>
+</div>
+
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-uCTpxNUJmwTRiAIcOX471LiV1jahzyk&callback=initMap"
+    async defer></script>
+<script type="text/javascript" src="slide.js"></script>
+
+</body>
+</html> 
