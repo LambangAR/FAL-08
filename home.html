@@ -13,6 +13,7 @@
 
  <title>FAL! Game Portal</title>
     <link rel="shortcut icon" href="img\ic.ico">
+    
     <script>
       var app = angular.module("myApp", ["ngRoute"]);
       app.config(function($routeProvider){
@@ -20,14 +21,35 @@
         .when("/", {
             templateUrl : "main.htm"
         })
-        .when("/articles", {
-          templateUrl : "articles.htm"
+        .when("/article", {
+          templateUrl : "article.htm"
         })
         .when("/videos", {
           templateUrl : "videos.htm"
         })
         .when("/about", {
           templateUrl : "about.htm"
+        })
+        .when("/gameplay", {
+          templateUrl : "gameplay.htm"
+        })
+        .when("/PC", {
+          templateUrl : "PC.htm"
+        })
+         .when("/trailer", {
+          templateUrl : "trailer.htm"
+        })  
+         .when("/PS4", {
+          templateUrl : "PS4.htm"
+        })
+        .when("/Nitendo", {
+          templateUrl : "Nitendo.htm"
+        })
+        .when("/xbox", {
+          templateUrl : "xbox.htm"
+        })
+        .when("/walktrough", {
+          templateUrl : "walktrough.htm"
         })
 
       });
@@ -42,23 +64,30 @@
     <ul class="col-md-12">
      
       <div class="dropdown">
-        <li> <a href="home.html">Home</a></li>
+        <li> <a href="#!">Home</a></li>
       </div>
-    
-     
-      <div class="dropdown">
-        <li ><a href="">Games</a>
-        </li>
-     </div>
 
      
      <div class="dropdown">
-        <li ><a href="articles.htm">Articles</a>               
+        <li ><a href="#!article">Articles</a>
+          <div class="dropdown-content">
+              <a href="#!PC">PC</a>
+              <a href="#!PS4">PS4</a>
+              <a href="#!Nitendo">Nitendo</a>
+              <a href="#!xbox">Xbox</a>
+          </div>                  
         </li> 
      </div>
+
     
       <div class="dropdown">
-       <li ><a href="videos.htm">Videos</a>                
+        <li ><a href="#!videos">Videos</a>
+          <div class="dropdown-content">
+              <a href="#!gameplay">Gameplay</a>
+              <a href="#!walktrough">Walktrough</a>
+              <a href="#!trailer">Trailer</a>
+              
+          </div>                  
         </li> 
       </div>
 
@@ -70,12 +99,14 @@
         </li> 
       </div>
 
+<iframe src="http://free.timeanddate.com/clock/i69vvjp6/n666/tlid/fn6/fs16/fc9ff/tc333/ftb/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4" frameborder="0" width="212" height="50" ></iframe>
+
 <div class="con-icon-social">
         <li class=" icon-social">
-         <a href="https://www.facebook.com/zuck"> <img src="img\ico\fb.ico" style="height:20px;"></a></li>
+         <a href="www.twitter.com/awangga_"> <i class="fab fa-twitter"></i></a>
 
           <li class=" icon-social">
-         <a href="https://www.instagram.com/zuck/"><img src="img\ico\inst.png" style="height:20px;"> <i class="fab fa-insta"> </i></a></li>
+         <a href="www.facebook.com"> <i class="fab fa-facebook"> </i></a>
 </div>      
     </ul>
    </header>
@@ -86,11 +117,11 @@
 
 <div class="slider" id="main-slider"><!-- outermost container element -->
   <div class="slider-wrapper"><!-- innermost wrapper element -->
-    <img src="https://wallpapersite.com/images/pages/pic_w/4151.jpg" alt="First" class="slide" /><!-- slides -->
-    <img src="http://wallpapericon.com/wp-content/uploads/2017/06/Game-HD-Nier-Automata-Wallpaper.jpg" alt="Second" class="slide" />
-    <img src="https://wallpapersite.com/images/pages/pic_w/1011.jpg" alt="Third" class="slide" />
-    <img src="http://www.wallpaperback.net/wp-content/uploads/2018/02/PUBG-Player-Unknown-Battlegrounds-Cover-UHD-4K-Wallpaper.jpg" alt="Forth" class="slide" />
-    <img src="http://kb4images.com/images/dota-2-wallpapers/36428476-dota-2-wallpapers.jpg" alt="Fifth" class="slide" />
+    <img src="img/ss1.jpg" alt="First" class="slide" /><!-- slides -->
+    <img src="img/ss3.jpg" alt="Second" class="slide" />
+    <img src="img/ss5.jpg" alt="Third" class="slide" />
+    <img src="img/ss4.jpg" alt="Third" class="slide" />
+    <img src="img/ss6.jpg" alt="Third" class="slide" />
   </div>
 </div>  
 
@@ -124,21 +155,14 @@
       
         <br>
         <a href="#">back to top</a>
-        <br>
+        <br><small>
         <h4 align="left">FAL! Game Portal</h4>
-  <p align="left">fal.game@gmail.com</p> 
-        <p align="left">
+         <p align="left">fal.game@gmail.com</p> 
+        <p align="left"> 
 Disclaimer: Isi web ini diambil dari berbagai sumber.<br> Jika ada Gambar atau artikel yang menyinggung atau <br>di bawah Hak Cipta Anda maka silakan E-mail kami <br>untuk dihapus dalam waktu 24 jam</p>
-<p>copyright 2018</p>
-        
- 
+<p>copyright 2018</p></small>
     </div> 
   </footer>
 </div>
-
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-uCTpxNUJmwTRiAIcOX471LiV1jahzyk&callback=initMap"
-    async defer></script>
-<script type="text/javascript" src="slide.js"></script>
-
 </body>
 </html> 

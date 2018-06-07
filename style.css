@@ -70,7 +70,7 @@ background: #111;
  	text-align: center;
  	
  	color: white;
- 	height: 275px;
+ 	height: 200px;
  }
 
 .footer{
@@ -106,21 +106,8 @@ background: hsla(0, 0%, 7%, 0.5);
 padding: 2px;	
 padding: 10px;
 }
-.subcon2{
-background: hsla(0, 0%, 7%, 0.5);
-padding: 20px;   
-padding: 10px;
-width: 420%;
-
-}
-.subcon3{
-background: hsla(0, 0%, 7%, 0.5);
-padding: 20px;   
-padding: 10px;
-width: 120%;
-
-}
 .subcon img{
+	height: 120px;
 	width: 100%;
 }
 .subcon iframe{
